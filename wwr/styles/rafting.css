@@ -1,48 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Shantell+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Shantell+Sans:wght@300&display=swap");
 :root {
-    --primary-color: #ffa62b;
-    --secondary-color: #82c0cc;
-    --accent1-color: #489fb5;
-    --accent2-color: #16697a;
- 
-    --heading-font: 'Shantell Sans' cursive;
-    --paragraph-font: 'Gloock'serif;
-    --nav-background-color: #16697a;
-    --nav-link-color: #ffa62b;
-    --nav-hover-link-color: #489fb5;
-    --nav-hover-background-color:#82c0cc;
+  --primary-color: black;
+  --secondary-color: #489fb5;
+  --accent1-color: #82c0cc;
+  --accent2-color: #16697a;
+
+  --heading-font: "Shantell Sans" cursive;
+  --paragraph-font: "Gloock" serif;
+  --nav-background-color: #16697a;
+  --nav-link-color: black;
+  --nav-hover-link-color: #489fb5;
+  --nav-hover-background-color: #82c0cc;
 }
-header {
-    padding: 10px;
-    background-color: var(--accent1-color);
-    width: full;
+
+.hero {
     display: grid;
-    grid-template-columns: 150px auto auto auto auto;
-    grid-template-rows: 5fr;
-    grid-gap: 25px;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    justify-items: center;
 }
+
+.hero img {
+    width: 75%;
+}
+
+#nav_box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.history {
+    display: flexbox;
+    text-align: center;
+}
+
+.history img {
+    width: 60%;
+}
+
+.adventure {
+    text-align: Center;
+}
+
+#images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section img{
+    width: 250px;
+}
+
+header {
+  padding: 10px;
+  background-color: var(--accent2-color);
+  grid-gap: 25px;
+  align-items: center;
+}
+
 header img {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  padding-left: 25%;
 }
-header a {
-    align-self: center;
+
+nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-right: 25%;
 }
-main h1, h2 {
-    color: var(--primary-color);
-    font-family: 'Gloock', Serif;
-}
-main {
-    background-color: #489fb5;
-}
-main p {
-    color: var(--accent2-color);
-    font-family: 'Shantell Sans', cursive;
-}
+
 nav a {
-    text-decoration: none;
+  flex-direction: row;
+  font-size: large;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
 }
+
+main h1,
+h2 {
+  color: var(--primary-color);
+  font-family: "Gloock", Serif;
+}
+
+main h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+  background-color: var(--accent1-color);
+}
+
+main p {
+  color: var(--accent2-color);
+  font-family: "Shantell Sans", cursive;
+}
+
 main div {
-    position: relative;
+  position: relative;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 25px;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
 }
