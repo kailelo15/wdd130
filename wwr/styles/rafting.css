@@ -50,9 +50,39 @@
     justify-content: space-evenly;
 }
 
+.employee {
+  display: flex;
+  text-align: Center;
+  width: min-content;
+  padding: 50px;
+  margin: auto;
+  top: 10px;
+}
+
+.profiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.forms, .info {
+  width: 550px;
+  border: 2px double #16697a;
+  /* padding: 50px; */
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  /* column-gap: 10px; */
+}
+
 section img{
     width: 250px;
 }
+
 
 header {
   padding: 10px;
