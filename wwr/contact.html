@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact Us</title>
-    <meta name="description" content="Rafting Site Contact Us" />
+    <meta name="description" content="Contact Us" />
     <meta name="author" content="Kai Lelo" />
     <link rel="stylesheet" href="styles/rafting.css" />
   </head>
@@ -78,16 +78,19 @@
           <label for="email">Enter your email address:</label><br>
           <input type="text" id="email" name="email"><br>
           <p>Please select a reason for contacting us:</p>
-          <select>
-            <option value="General Inquiry">General Inquiry </option>
-            <option value="Reservation Question">Reservation Question</option>
-            <option value="Website Suggestion">Website Suggestion</option>
-          </select>
+            <input type="radio" id="General Inquiry" name="reason" value="General Inquiry"checked>
+              <label for="General Inquiry">General Inquiry</label>
+            <input type="radio" id="Reservation Request" name="reason" value="Reservation Request"checked>
+              <label for="Reservation Request">Reservation Request</label>
+            <input type="radio" id="Website Suggestion" name="reason" value="Website Suggestion"checked>
+              <label for="Website Suggestion">Website Suggestion</label>
           <p>
             <textarea cols="50" rows="10">Type message here...</textarea>
           </p>
           Please subscribe me to the monthly newsletter <input type="checkbox" name="checkbox">
-          <button type="button">Submit Contact Request</button><br>
+          <section>
+            <button type="button">Submit Contact Request</button><br>
+          </section>
       </form>
       </div>
     </div>
