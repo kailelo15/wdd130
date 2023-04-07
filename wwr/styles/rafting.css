@@ -18,10 +18,15 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
     justify-items: center;
+    align-items: center;
 }
 
 .hero img {
     width: 75%;
+}
+
+.hero p {
+  margin-right: 25px;
 }
 
 #nav_box {
@@ -69,19 +74,18 @@
 .forms, .info {
   width: 550px;
   border: 2px double #16697a;
-  /* padding: 50px; */
 }
 
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  /* column-gap: 10px; */
 }
 
 .trip1, .trip2, .trip3 {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 25px;
 }
 .trips {
   padding: 10px;
@@ -152,8 +156,9 @@ h2 {
 }
 
 main h1 {
-    text-align: center;
-    padding: 10px;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
 }
 
 main {
