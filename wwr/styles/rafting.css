@@ -79,6 +79,40 @@
   /* column-gap: 10px; */
 }
 
+.trip1, .trip2, .trip3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.trips {
+  padding: 10px;
+  text-align: center;
+}
+
+.action {
+  display: flex;
+  justify-content: right;
+  padding: 20px;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+}
+
+.beg, .int, .adv {
+  border: 2px double #16697a;
+}
+
+h3 {
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
 section img{
     width: 250px;
 }
